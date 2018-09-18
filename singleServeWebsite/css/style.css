@@ -17,7 +17,7 @@ h1{
 	background-color: #ee5253;
 	border-radius: 25px;
 	border: 3px solid #222f3e;
-	margin: calc((100vh - 150px) / 2) auto;
+	margin: calc((100vh - 150px) / 2) calc((100vw - 300px) / 2);
 	transition: all 0.5s ease;
 	box-shadow: inset -5px -15px 10px 10px rgba(0,0,0,.1),
 				inset 5px 15px 10px 10px rgba(255,255,255,.1),
