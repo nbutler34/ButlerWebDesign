@@ -11,6 +11,10 @@ h1{
 	background: radial-gradient(circle, #576574, #222f3e) no-repeat center center fixed;
 }
 
+body{
+	margin: 0px;
+}
+
 .button {
 	height: 150px;
 	width: 300px;
@@ -34,6 +38,10 @@ h1{
 	cursor: pointer;
 	color: #576574;
 	border: 3px solid #576574;
+}
+
+.button:focus {
+	outline: none;
 }
 
 .button:active {
@@ -104,4 +112,9 @@ a:hover {
 	position: fixed;
 	transition: all 0.5s ease;
 	display: none;
+	border: 3px solid #222f3e;
+	border-radius: 20px;
+	box-shadow: inset -5px -15px 10px 10px rgba(0,0,0,.1),
+				inset 5px 15px 10px 10px rgba(255,255,255,.1),
+				0px 0px 30px 0px rgba(0,0,0,.3);
 }

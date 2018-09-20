@@ -5,7 +5,7 @@ function playVid() {
     } else {
         x.style.display = "block";
         x.play();
-        setTimeout(hideVid, 10750);
+        setTimeout(hideVid, 10800);
     }
 }
 
