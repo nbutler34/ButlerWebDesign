@@ -12,5 +12,7 @@ function playVid() {
 function hideVid() {
 	var x = document.getElementById("hideMe");
 	x.pause();
+	x.currentTime = 0;
+	x.load();
 	x.style.display = "none";
 }
