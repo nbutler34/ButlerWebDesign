@@ -4,9 +4,13 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Anton" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet">
-		<title>Single Serve Website</title>
+		<script src="scripts/main.js"></script>
+		<title>Spider-Kick</title>
 	</head>
 	<body class="background">
-		<div class="button"><h1>button</h1></div>
+		<button onclick="playVid()" class="button"><h1>Spider-Kick</h1></button>
+		<video preload controls autoplay="autoplay" class="spiderVid" id="hideMe">
+			<source src="media/video.mp4" type="video/mp4">
+		</video>
 	</body>
 </html>
