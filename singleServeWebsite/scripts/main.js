@@ -4,5 +4,6 @@ function playVid() {
         x.style.display = "none";
     } else {
         x.style.display = "block";
+        x.play();
     }
 }
