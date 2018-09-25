@@ -1,18 +1,21 @@
 function playVid() {
     var x = document.getElementById("hideMe");
-    if (x.style.display === "block" && x.paused) {
+    if (x.style.display === "block") {
         x.style.display = "none";
+        x.pause();
+        x.currentTime = 0;
+        x.load();
     } else {
         x.style.display = "block";
         x.play();
-        setTimeout(hideVid, 10800);
+        setTimeout(playVid, 10800);
     }
 }
 
 function hideVid() {
 	var x = document.getElementById("hideMe");
+    x.style.display = "none";
 	x.pause();
 	x.currentTime = 0;
 	x.load();
-	x.style.display = "none";
 }
