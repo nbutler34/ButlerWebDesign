@@ -11,11 +11,3 @@ function playVid() {
         setTimeout(playVid, 10800);
     }
 }
-
-function hideVid() {
-	var x = document.getElementById("hideMe");
-    x.style.display = "none";
-	x.pause();
-	x.currentTime = 0;
-	x.load();
-}
