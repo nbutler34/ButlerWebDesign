@@ -16,20 +16,31 @@ body {
 
 h1 {
 	/*margin-left: 0;*/
-	margin-top: 100px;
+	margin-top: 0px;
 	margin-bottom: 0px;
 	font-size: 4.75em;
 	text-align: center;
-	color: red;
 }
 
 h3 {
 	/*margin-left: 6vw;*/
 	margin-top: -20px;
-	margin-bottom: 0px;
+	margin-bottom: -30px;
+	margin-right: 20px;
 }
 
 p {
 	text-align: left;
 	margin: 40px;
+	margin-top: 150px;
+	font-family: 'Cuprum', sans-serif;
+	font-size: 2em;
+}
+
+.title{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding: 20px;
+	text-align: right;
 }
