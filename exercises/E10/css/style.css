@@ -1,0 +1,247 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	padding-bottom: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	color: #2d3436;
+}
+
+span{
+	text-align: center;
+	font-family: 'Lobster', cursive;
+	text-shadow: 0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				10px 10px #e84393;
+	font-size: 1em;
+	margin: 0px -3px;
+}
+
+#top{
+	margin-bottom: 200px;
+}
+
+.line{
+	width: 80vw;
+	height: 10px;
+	margin: auto;
+	border: 3px solid black;
+	border-radius: 10px;
+}
+
+.spacerBecauseHTMLThinksItsTooGoodToDisplayTheMarginsTheWayITellItTo{
+	width: 10vw;
+	height: 200px;
+}
+
+.titleStyle{
+	text-align: center;
+	font-family: 'Lobster', cursive;
+	font-size: 4em;
+	color: #ffffff;
+	text-shadow: 0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				10px 10px #e84393;
+	line-height: 1em;
+}
+
+.intro{
+	width: 35vw;
+	margin: auto;
+}
+
+.signature{
+	font-family: 'Gloria Hallelujah', cursive;
+	text-align: right;s
+}
+
+.bodyText{
+	width: 35vw;
+	margin: auto;
+	margin-bottom: 25px;
+	background-color: white;
+	padding: 25px;
+	box-shadow: 10px 10px #e84393;
+	border: 3px solid black;
+	border-radius: 4px;
+}
+
+.pieceR{
+	width: 49vw;
+	margin: 0;
+	float: right;
+	/*border: 1px solid black;*/
+}
+
+.pieceL{
+	width: 49vw;
+	margin: 0;
+	float: left;
+	/*border: 1px solid black;*/
+}
+
+.subHeading{
+	text-align: center;
+	font-family: 'Lobster', cursive;
+	font-size: 2em;
+	color: #ffffff;
+	text-shadow: 0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				0px 0px 1.5px black,
+				10px 10px #e84393;
+}
+
+.red{color: red;}
+.orange{color: orange;}
+.yellow{color: yellow;}
+.green{color: green;}
+.blue{color: blue;}
+
+.larger{
+	font-size: 1.5em;
+	color: #ffffff;
+}
+
+
+@media only screen and (max-width: 600px) {
+	body{
+		font-size: 16px;
+	}
+
+	span{
+		text-align: center;
+		font-size: 1em;
+		margin: 0px -3px;
+	}
+
+	#top{
+		margin-bottom: 200px;
+	}
+
+	.line{
+		width: 80vw;
+		height: 10px;
+		margin: auto;
+		border: 3px solid black;
+		border-radius: 10px;
+	}
+
+	.spacerBecauseHTMLThinksItsTooGoodToDisplayTheMarginsTheWayITellItTo{
+		width: 10vw;
+		height: 200px;
+	}
+
+	.titleStyle{
+		text-align: center;
+		font-size: 3em;
+		color: #ffffff;
+		line-height: 1em;
+	}
+
+	.intro{
+		width: 75vw;
+		margin: auto;
+	}
+
+	.signature{
+		text-align: right;
+	}
+
+	.bodyText{
+		width: 92vw;
+	}
+
+	.pieceR{
+		width: 100vw;
+		float: none;
+		margin: auto;
+	}
+
+	.pieceL{
+		width: 100vw;
+		float: none;
+		margin: auto;
+	}
+
+	.subHeading{
+		text-align: center;
+		font-size: 2em;
+		color: #ffffff;
+	}
+
+	.larger{
+		font-size: 1.5em;
+		color: #ffffff;
+	}
+
+	i{
+		font-size: 0.8em;
+		line-height: 1%;
+	}
+}
