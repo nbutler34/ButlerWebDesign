@@ -1,0 +1,145 @@
+*{box-sizing: border-box;}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	text-align: center;
+	background-color: #dff9fb;
+}
+
+img{
+	float: right;
+	height: auto;
+	width: 34vw;
+	/*margin: 0.5vw;*/
+	border: 3px solid black;
+	margin-right: 3.5vw;
+	border-radius: 25px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+iframe{
+	float: right;
+	height: 20vw;
+	width: 34vw;
+	/*margin: 0.5vw;*/
+	border: 3px solid black;
+	margin-right: 3.5vw;
+	/*border-radius: 25px;*/
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.EA{
+	width: 50vw;
+	margin: 0;
+	border: none;
+}
+
+p{
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: left;
+	margin-right: 40px;
+	margin-left: 40px;
+}
+
+h1{
+	font-family: 'Rock Salt', cursive;
+	padding: 0;
+	margin: 0;
+	text-shadow: 10px 10px rgba(0,0,0,0.1);
+}
+
+h3{
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-weight: 900;
+	font-size: 5.75em;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+	margin-top: -43px;
+	text-shadow: 10px 10px rgba(0,0,0,0.1);
+	/*z-index: -1;*/
+}
+
+h2{
+	font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.container{
+	width: 100%;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	/*background-color: white;*/
+	/*border: 3px solid black;*/
+}
+
+#title{
+	height: 35.57692vw;
+}
+
+.shelf{
+	width: 75vw;
+	margin: auto;
+	/*border: 3px solid black;*/
+	padding: 20px;
+	border-radius: 25px;
+	background-color: white;
+	margin-top: 5vw;
+	margin-bottom: 5vw;
+	box-shadow: 20px 20px rgba(0,0,0,0.1);
+	min-height: 37vw;
+}
+
+#top{
+	min-height: none;
+}
+
+.E{
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.line{
+
+}
+
+.sticky{
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: white;
+	box-shadow: 0px 10px rgba(0,0,0,0.1);
+}
+
+@media only screen and (max-width: 768px){
+	body{
+		/*background-color: white;*/
+	}
+
+	.shelf{
+		width: 100vw;
+		box-shadow: 0px 20px rgba(0,0,0,0.1);
+		border-radius: 0px;
+	}
+
+	img{
+		width: 100%;
+		float: none;
+	}
+
+	p
+}
+
+@media only screen and (max-width: 1080px){
+	.shelf{
+		width: 90vw;
+	}
+}
+
+@media only screen and (max-width: 2160px){
+
+}
