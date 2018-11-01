@@ -122,10 +122,6 @@ h2{
 	float: left;
 }
 
-.E{
-	font-size: 2em;
-	font-weight: bold;
-}
 
 .sticky{
 	position: sticky;
@@ -233,6 +229,10 @@ h2{
 
 
 @media only screen and (max-width: 768px){
+	body{
+		font-size: 14px;
+	}
+
 	img{
 		float: none;
 		width: 100%;
@@ -290,5 +290,9 @@ h2{
 	.container{
 		width: 100%;
 		height: auto;
+	}
+
+	h3{
+		margin-top: -33px;
 	}
 }
