@@ -9,32 +9,19 @@ body{
 }
 
 img{
-	float: none; /*this one*/
+	float: none;
 	height: auto;
 	width: 34vw;
-	/*margin: 0.5vw;*/
 	border: 3px solid black;
 	margin-right: 3.5vw;
 	border-radius: 25px;
-	margin: auto; /*this one*/
-	margin-bottom: 20px;
-	margin-top: 20px;
-}
-
-iframe{
-	float: right;
-	height: 20vw;
-	width: 34vw;
-	/*margin: 0.5vw;*/
-	border: 3px solid black;
-	margin-right: 3.5vw;
-	/*border-radius: 25px;*/
+	margin: auto;
 	margin-bottom: 20px;
 	margin-top: 20px;
 }
 
 .EA{
-	width: 100%; /*this one*/
+	width: 100%;
 	margin: 0;
 	border: none;
 }
@@ -44,6 +31,7 @@ p{
 	text-align: left;
 	margin-right: 40px;
 	margin-left: 40px;
+	font-size: 1.2em;
 }
 
 h1{
@@ -70,19 +58,26 @@ h2{
 }
 
 .container{
-	width: 100%;
+	width: 75%;
+	margin: auto;
 	margin-top: 40px;
 	margin-bottom: 40px;
 	/*background-color: white;*/
 	/*border: 3px solid black;*/
 }
 
-#title{
-	height: default; /*this one*/
+.containerTitle{
+	width: 75%;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	/*background-color: white;*/
+	/*border: 3px solid black;*/
+	height: default;
 }
 
-.shelf{
-	width: 40vw; /*this one*/
+.shelfLeft{
+	width: 40vw;
 	margin: auto;
 	/*border: 3px solid black;*/
 	padding: 20px;
@@ -91,22 +86,44 @@ h2{
 	margin-top: 5vw;
 	margin-bottom: 5vw;
 	box-shadow: 20px 20px rgba(0,0,0,0.1);
-	min-height: none; /*this one*/
+	min-height: none;
+	margin-left: 6vw;
+	float: left;
 }
 
-#top{
+.shelfRight{
+	width: 40vw;
+	margin: auto;
+	/*border: 3px solid black;*/
+	padding: 20px;
+	border-radius: 25px;
+	background-color: white;
+	margin-top: 5vw;
+	margin-bottom: 5vw;
+	box-shadow: 20px 20px rgba(0,0,0,0.1);
 	min-height: none;
-	margin-left: 6vw; /*this one*/
-	float: left; /*this one*/
+	margin-right: 6vw;
+	float: right;
+}
+
+.shelfTop{
+	width: 40vw;
+	margin: auto;
+	/*border: 3px solid black;*/
+	padding: 20px;
+	border-radius: 25px;
+	background-color: white;
+	margin-top: 5vw;
+	margin-bottom: 5vw;
+	box-shadow: 20px 20px rgba(0,0,0,0.1);
+	min-height: none;
+	margin-left: 6vw;
+	float: left;
 }
 
 .E{
 	font-size: 2em;
 	font-weight: bold;
-}
-
-.line{
-
 }
 
 .sticky{
@@ -118,155 +135,173 @@ h2{
 	box-shadow: 0px 10px rgba(0,0,0,0.1);
 }
 
-/*all this*/
-#left{
-	margin-left: 6vw;
-	float: left;
-}
-
-#right{
-	margin-right: 6vw;
-	float: right;
-}
-
 @media only screen and (max-width: 768px){
-	body{
-		/*background-color: white;*/
+	img{
+		float: none;
+		width: 100%;
+		border: 3px solid black;
+		border-radius: 25px;
+		margin: auto;
+		margin-bottom: 20px;
+		margin-top: 20px;
 	}
 
-	.shelf{
-		width: 100vw;
+	.shelfLeft{
+		width: 100%;
+		min-height: 37vw;
 		box-shadow: 0px 20px rgba(0,0,0,0.1);
 		border-radius: 0px;
-	}
-
-	img{
-		width: 100%;
+		margin-left: 0;
 		float: none;
-	}
-
-	p
-}
-
-@media only screen and (max-width: 1280px){
-	.shelf{
-		width: 90vw;
-	}
-}
-
-@media only screen and (max-width: 2160px){
-	body{
-		margin: 0;
-		padding: 0;
-		font-size: 20px;
-		text-align: center;
-		background-color: #dff9fb;
-	}
-
-	img{
-		float: right;
 		height: auto;
-		width: 34vw;
-		/*margin: 0.5vw;*/
-		border: 3px solid black;
-		margin-right: 3.5vw;
-		border-radius: 25px;
-		margin-bottom: 20px;
-		margin-top: 20px;
 	}
 
-	iframe{
-		float: right;
-		height: 20vw;
-		width: 34vw;
-		/*margin: 0.5vw;*/
-		border: 3px solid black;
-		margin-right: 3.5vw;
-		/*border-radius: 25px;*/
-		margin-bottom: 20px;
-		margin-top: 20px;
+	.shelfRight{
+		width: 100%;
+		min-height: 37vw;
+		box-shadow: 0px 20px rgba(0,0,0,0.1);
+		border-radius: 0px;
+		margin-right: 0;
+		float: none;
+		height: auto;
+	}
+
+	.shelfTop{
+		width: 100%;
+		min-height: 37vw;
+		box-shadow: 0px 20px rgba(0,0,0,0.1);
+		border-radius: 0px;
+		margin-left: auto;
+		float: none;
+		height: auto;
 	}
 
 	.EA{
-		width: 50vw;
-		margin: 0;
-		border: none;
+		width: 100%;
+		float: none;
+		border-radius: 25px;
+		margin: auto;
+		margin-bottom: 20px;
+		margin-top: 20px;
 	}
 
-	p{
-		font-family: 'Josefin Sans', sans-serif;
-		text-align: left;
-		margin-right: 40px;
-		margin-left: 40px;
+	.containerTitle{
+		height: auto;
+		width: 100%;
 	}
 
-	h1{
-		font-family: 'Rock Salt', cursive;
-		padding: 0;
-		margin: 0;
-		text-shadow: 10px 10px rgba(0,0,0,0.1);
+	.shelf{
+		width: 100%;
+		min-height: 37vw;
+		box-shadow: 0px 20px rgba(0,0,0,0.1);
+		border-radius: 0px;
+		height: auto;
 	}
 
-	h3{
-		font-family: 'Alegreya Sans SC', sans-serif;
-		font-weight: 900;
-		font-size: 5.75em;
-		text-transform: uppercase;
-		padding: 0;
-		margin: 0;
-		margin-top: -43px;
-		text-shadow: 10px 10px rgba(0,0,0,0.1);
-		/*z-index: -1;*/
-	}
-
-	h2{
-		font-family: 'Alegreya Sans SC', sans-serif;
+	.shelfTop{
+		width: 100%;
+		box-shadow: 0px 20px rgba(0,0,0,0.1);
+		border-radius: 0px;
+		height: auto;
+		min-height: none;
 	}
 
 	.container{
 		width: 100%;
-		margin-top: 40px;
-		margin-bottom: 40px;
+		height: auto;
+	}
+}
+
+@media only screen and (max-width: 1280px){
+
+	body{
 		/*background-color: white;*/
-		/*border: 3px solid black;*/
 	}
 
-	#title{
+	.containerTitle{
 		height: 35.57692vw;
+		width: 100%;
 	}
 
-	.shelf{
-		width: 75vw;
-		margin: auto;
-		/*border: 3px solid black;*/
-		padding: 20px;
-		border-radius: 25px;
-		background-color: white;
-		margin-top: 5vw;
-		margin-bottom: 5vw;
-		box-shadow: 20px 20px rgba(0,0,0,0.1);
+	.container{
+		width: 100%;
+	}
+
+	.shelfLeft{
+		width: 90vw;
 		min-height: 37vw;
+		margin-left: auto;
+		float: none;
 	}
 
-	#top{
+	.shelfRight{
+		width: 90vw;
+		min-height: 37vw;
+		margin-right: auto;
+		float: none;
+	}
+
+	.shelfTop{
+		width: 90vw;
+		min-height: 37vw;
+		margin-left: auto;
+		float: none;
 		min-height: none;
 	}
 
-	.E{
-		font-size: 2em;
-		font-weight: bold;
+	img{
+		float: right;
 	}
 
-	.line{
+	.EA{
+		width: 50vw;
+	}
+}
 
+@media only screen and (max-width: 2160px){
+	.shelfLeft{
+		width: 75vw;
+		min-height: 37vw;
+		margin-left: auto;
+		float: none;
 	}
 
-	.sticky{
-		position: sticky;
-		top: 0;
-		left: 0;
-		width: 100%;
-		background-color: white;
-		box-shadow: 0px 10px rgba(0,0,0,0.1);
+	.shelfRight{
+		width: 75vw;
+		min-height: 37vw;
+		margin-right: auto;
+		float: none;
+	}
+
+	.shelfTop{
+		width: 75vw;
+		margin-left: auto;
+		float: none;
+		min-height: none;
+	}
+
+	img{
+		float: right;
+	}
+
+	.EA{
+		width: 50vw;
+	}
+
+	.containerTitle{
+		width: 50%;
+		height: 35.57692vw;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.container{
+		width: 50%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	p{
+		font-size: 1em;
 	}
 }
