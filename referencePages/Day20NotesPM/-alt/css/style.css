@@ -1,0 +1,13 @@
+body {
+	transition: all 1s ease;
+	background-color: dodgerblue;
+}
+p {
+	transition: all 10s ease;
+}
+.bigger {
+	font-size: 200px;
+}
+.bodyBG {
+	background-color: rebeccapurple;
+}

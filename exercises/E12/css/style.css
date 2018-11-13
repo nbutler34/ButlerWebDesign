@@ -1,0 +1,50 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Chivo', sans-serif;
+}
+.consoleText{
+	font-size: 2vw;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+.game{
+	background-color: #70a1ff;
+	position: fixed;
+	left: -80vw;
+	top: 25vh;
+	width: 80vw;
+	height: 50vh;
+	text-align: center;
+	transition: all 1s ease;
+}
+.console{
+	background-color: #5352ed;
+	position: fixed;
+	left: 0vw;
+	top: 0;
+	width: 20vw;
+	height: 100vh;
+	z-index: 1;
+	text-align: center;
+	transition: all 1s ease;
+}
+.stretch{
+	width: 25vw;
+}
+.red1{
+	background-color: #ff4757;
+}
+.red2{
+	background-color: #ff6b81;
+}
+.onScreen{
+	left: 20vw;
+	top: 0vh;
+	height: 100vh;
+	transition: all 1s ease;
+}
