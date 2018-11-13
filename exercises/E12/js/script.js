@@ -38,30 +38,30 @@ function interactions(lastClicked) {
 		console.log('onScreen dblclick was run');
 
 		if( $('.onScreen').is('#Infamous') ){
-			console.log('it worked this time');
+			console.log('Infamous');
 			$('#FalloutNV').toggleClass('onScreen');
 			$('#Infamous').toggleClass('onScreen');
-		} 
+		}
 		else if( $('.onScreen').is('#FalloutNV') ){
-			console.log('it worked');
+			console.log('fallout');
 			$('#BioShock8').toggleClass('onScreen');
 			$('#FalloutNV').toggleClass('onScreen');
 		}
 
 		else if( $('.onScreen').is('#BioShock8') ){
-			console.log('it worked 2');
+			console.log('bioshock');
 			$('#NFSHotPursuit').toggleClass('onScreen');
 			$('#BioShock8').toggleClass('onScreen');
 		}
 
 		else if( $('.onScreen').is('#NFSHotPursuit') ){
-			console.log('it worked 3');
+			console.log('NFS');
 			$('#BatmanAA').toggleClass('onScreen');
 			$('#NFSHotPursuit').toggleClass('onScreen');
 		}
 
 		else if( $('.onScreen').is('#BatmanAA') ){
-			console.log('it worked 4');
+			console.log('Batman');
 			$('#Infamous').toggleClass('onScreen');
 			$('#BatmanAA').toggleClass('onScreen');
 		}
