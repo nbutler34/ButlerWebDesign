@@ -1,26 +1,54 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Nicholas Butler Tic-Tac-Toe</title>
+		<title>Nicholas Butler Guessing Game</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="icon" href="../../media/icon.png">
 		<link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Black+Han+Sans|Montserrat+Alternates" rel="stylesheet">
 	</head>
 	<body>
+		<div class="you__win dontShow" id="win">You Win!</div>
 
-		<!-- Controls on the left and right -->
-		<div class="l__ctrl"></div>
-		<div class="r__ctrl"></div>
-
+		<div class="fake__Guess" id="fake__FIRST"></div>
+		<div class="fake__Guess" id="fake__SECOND"></div>
+		<div class="fake__Guess" id="fake__THIRD"></div>
+		<div class="fake__Guess" id="fake__FOURTH"></div>
 		<!-- Container the size of the page that holds the game -->
 		<div class="page">
 			<!-- Container to hold the field of play in place -->
 			<div class="field">
+
+				<button onclick="checkAnswer()" class="check__btn">Check Answer</button>
+
 				<div class="guess guess__Default" id="FIRST"></div>
 				<div class="guess guess__Default" id="SECOND"></div>
 				<div class="guess guess__Default" id="THIRD"></div>
 				<div class="guess guess__Default" id="FOURTH"></div>
+				<div class="button__holder">
+					<button onclick="setColor('FIRST', 'RED')" class="red__btn" id="1R">R</button>
+					<button onclick="setColor('FIRST', 'GREEN')" class="green__btn" id="1G">G</button>
+					<button onclick="setColor('FIRST', 'BLUE')" class="blue__btn" id="1B">B</button>
+					<button onclick="setColor('FIRST', 'YELLOW')" class="yellow__btn" id="1Y">Y</button>
+				</div>
+				<div class="button__holder">
+					<button onclick="setColor('SECOND', 'RED')" class="red__btn" id="2R">R</button>
+					<button onclick="setColor('SECOND', 'GREEN')" class="green__btn" id="2G">G</button>
+					<button onclick="setColor('SECOND', 'BLUE')" class="blue__btn" id="2B">B</button>
+					<button onclick="setColor('SECOND', 'YELLOW')" class="yellow__btn" id="2Y">Y</button>
+				</div>
+				<div class="button__holder">
+					<button onclick="setColor('THIRD', 'RED')" class="red__btn" id="3R">R</button>
+					<button onclick="setColor('THIRD', 'GREEN')" class="green__btn" id="3G">G</button>
+					<button onclick="setColor('THIRD', 'BLUE')" class="blue__btn" id="3B">B</button>
+					<button onclick="setColor('THIRD', 'YELLOW')" class="yellow__btn" id="3Y">Y</button>
+				</div>
+				<div class="button__holder">
+					<button onclick="setColor('FOURTH', 'RED')" class="red__btn" id="4R">R</button>
+					<button onclick="setColor('FOURTH', 'GREEN')" class="green__btn" id="4G">G</button>
+					<button onclick="setColor('FOURTH', 'BLUE')" class="blue__btn" id="4B">B</button>
+					<button onclick="setColor('FOURTH', 'YELLOW')" class="yellow__btn" id="4Y">Y</button>
+				</div>
 			</div>
 
 		</div>
