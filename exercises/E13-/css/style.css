@@ -6,6 +6,7 @@ body{
 	padding: 0;
 	background-color: #bdc3c7;
 	font-size: 24px;
+	color: #2d3436;
 }
 .page{
 	width: 100vw;
@@ -24,14 +25,17 @@ body{
 }
 .guess__Default{
 	border: dashed 10px #2d3436;
+	transition: 0.5s ease all;
 }
 .guess__Correct{
 	border: solid 10px #00b894;
 	box-shadow: 0px 0px 80px rgba(0, 184, 148, 0.5);
+	transition: 0.5s ease all;
 }
 .guess__Wrong{
 	border: solid 10px #d63031;
 	box-shadow: 0px 0px 80px rgba(214, 48, 49, 0.5);
+	transition: 0.5s ease all;
 }
 .guess{
 	height: 15vw;
@@ -66,7 +70,6 @@ body{
 .red__btn, .green__btn, .blue__btn, .yellow__btn{
 	height: 5vw;
 	width: 5vw;
-	/*margin: 1.125vw;*/
 	margin: calc((15vw - 5vw) / 8);
 	float: left;
 	border-radius: 25px;
@@ -74,9 +77,9 @@ body{
 	font-size: 2em;
 	font-family: 'Montserrat Alternates', sans-serif;
 }
-button:hover{
-	cursor: pointer;
-}
+button:hover{cursor: pointer;}
+button:focus {outline:0;}
+button{color: rgba(45, 52, 54,1.0);}
 .red__btn{
 	background-color: rgba(255, 118, 117, 1.0);
 }
