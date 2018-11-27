@@ -1,6 +1,7 @@
 $(document).ready(function() {
     // run function on initial page load
     setCode();
+    interactions();
 
 	// run function on resize of the window
     $(window).resize(function() {
@@ -404,4 +405,19 @@ function checkAnswer() {
 		$('#win').removeClass('dontShow');
 		console.log("you win");
 	}
+}
+
+function interactions(){
+	$('#insID').mouseenter(function() {
+		$('#insID').text("Attempt to guess the correct color sequence by pressing the colored buttons to assign a color to the square above it. Press the 'Check Answer' button once colors are assigned. If a color is correct, the outline turns green. If the color is incorrect, the outline turns red. Enjoy!");
+	});
+
+	$('#insID').mouseleave(function() {
+		$('#insID').text("Instructions");
+	});
+
+	$('#win').click(function() {
+		$('#win').removeClass('show');
+		$('#win').addClass('dontShow');
+	});
 }

@@ -1,5 +1,6 @@
 *{
 	box-sizing: border-box;
+	transition: all 0.5s ease;
 }
 body{
 	margin: 0;
@@ -25,17 +26,17 @@ body{
 }
 .guess__Default{
 	border: dashed 10px #2d3436;
-	transition: 0.5s ease all;
+	transition: 1s ease all;
 }
 .guess__Correct{
 	border: solid 10px #00b894;
 	box-shadow: 0px 0px 80px rgba(0, 184, 148, 0.5);
-	transition: 0.5s ease all;
+	transition: 1s ease all;
 }
 .guess__Wrong{
 	border: solid 10px #d63031;
 	box-shadow: 0px 0px 80px rgba(214, 48, 49, 0.5);
-	transition: 0.5s ease all;
+	transition: 1s ease all;
 }
 .guess{
 	height: 15vw;
@@ -77,21 +78,27 @@ body{
 	font-size: 2em;
 	font-family: 'Montserrat Alternates', sans-serif;
 }
+
+.red__btn:hover, .green__btn:hover, .blue__btn:hover, .yellow__btn:hover{
+	border: solid 5px rgba(99, 110, 114,1.0);
+	color: rgba(99, 110, 114,1.0);
+}
+
 button:hover{cursor: pointer;}
 button:focus {outline:0;}
 button{color: rgba(45, 52, 54,1.0);}
-.red__btn{
-	background-color: rgba(255, 118, 117, 1.0);
-}
-.green__btn{
-	background-color: rgba(85, 239, 196, 1.0);
-}
-.blue__btn{
-	background-color: rgba(116, 185, 255, 1.0);
-}
-.yellow__btn{
-	background-color: rgba(253, 203, 110, 1.0);
-}
+.red__btn{background-color: rgba(255, 118, 117, 1.0);}
+.red__btn:hover{background-color: rgba(250, 177, 160,1.0)}
+
+.green__btn{background-color: rgba(85, 239, 196, 1.0);}
+.green__btn:hover{background-color: rgba(129, 236, 236,1.0)}
+
+.blue__btn{background-color: rgba(116, 185, 255, 1.0);}
+.blue__btn:hover{background-color: #81D4FA;}
+
+.yellow__btn{background-color: rgba(253, 203, 110, 1.0);}
+.yellow__btn:hover{background-color: rgba(255, 234, 167,1.0);}
+
 .check__btn{
 	position: fixed;
 	top: calc((100vh - 3vw) / 2);
@@ -105,12 +112,18 @@ button{color: rgba(45, 52, 54,1.0);}
 	font-family: 'Montserrat Alternates', sans-serif;
 }
 
-.show{
-	display: block;
+.check__btn:hover{
+	border: solid 5px rgba(99, 110, 114,1.0);
+	color: rgba(99, 110, 114,1.0);
+	background-color: #ffffff;
 }
 
 .dontShow{
-	display: none;
+	/*display: none;*/
+	opacity: 0;
+	transition: all 2s ease;
+	z-index: -20;
+	transition: z-index 0s;
 }
 
 .you__win{
@@ -124,8 +137,47 @@ button{color: rgba(45, 52, 54,1.0);}
 	border-radius: 25px;
 	font-family: 'Montserrat Alternates', sans-serif;
 	font-size: 2em;
-	transition: all 0.5s ease;
-	z-index: 5;
+	transition: all 2s ease;
+	transition: z-index 0s;
 	text-align: center;
 	padding-top: 20vh;
+}
+
+.show{
+	/*display: block;*/
+	transition: all 2s ease;
+	opacity: 1;
+	z-index: 5;
+	transition: z-index 0s;
+}
+
+.red__btn:active, .green__btn:active, .blue__btn:active, .yellow__btn:active, .check__btn:active{
+	background-color: rgba(178, 190, 195,1.0);
+	color: rgba(178, 190, 195,1.0);
+}
+
+.ins{
+	height: 2vw;
+	width: 10vw;
+	position: fixed;
+	top: 50px;
+	left: 50px;
+	background-color: rgba(223, 230, 233,1.0);
+	border: solid 2px rgba(45, 52, 54,1.0);
+	text-align: center;
+	border-radius: 10px;
+	font-family: 'Architects Daughter', cursive;
+	z-index: 20;
+	transition: 0.5s ease all;
+	overflow: hidden;
+}
+
+.ins:hover{
+	height: 15vw;
+	width: 25vw;
+	border: solid 5px rgba(45, 52, 54,1.0);
+	padding: 2vw;
+	padding-left: 3vw;
+	padding-right: 3vw;
+	font-size: 0.8em;
 }
