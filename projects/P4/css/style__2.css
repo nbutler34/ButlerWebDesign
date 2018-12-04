@@ -16,8 +16,8 @@ nav{
 	padding: 10px 100px;
 	transition: 0.5s ease all;
 }
-nav.black{
-	background: rgba(0, 0, 0, 0.8);
+nav.show{
+	background: rgba(255, 255, 255, 0.5);
 	height: 100px;
 	padding: 10px 100px;
 }
@@ -27,8 +27,9 @@ nav .logo{
 	float: left;
 	font-size: 24px;
 	transition: 0.5s ease all;
+	color: #fff;
 }
-nav.black .logo{
+nav.show .logo{
 	color: #fff;
 }
 nav ul{
@@ -43,13 +44,13 @@ nav ul li{
 }
 nav ul li a{
 	line-height: 80px;
-	color: #151515;
+	color: #fff;
 	padding: 12px 30px;
 	text-decoration: none;
 	text-transform: uppercase;
 	transition: 0.5s ease all;
 }
-nav.black ul li a{
+nav.show ul li a{
 	color: #fff;
 }
 nav ul li a:focus{
@@ -62,11 +63,10 @@ nav ul li a.active{
 }
 
 
-.header__pic__desktop{
-	width: 100vw;
-	height: auto;
-}
-.header__pic__mobile{
-	width: 100vw;
-	height: auto;
+.header__pic{
+	width: 100%;
+	height: 100vh;
+	background: url(chalk.jpg);
+	background-size: cover;
+	background-position: center;
 }

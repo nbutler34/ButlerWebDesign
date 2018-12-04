@@ -1,8 +1,8 @@
 $(window).on('scroll', function() {
 	if($(window).scrollTop()) {
-		$('nav').addClass('black');
+		$('nav').addClass('show');
 	}
 	else {
-		$('nav').removeClass('black');
+		$('nav').removeClass('show');
 	}
 })
