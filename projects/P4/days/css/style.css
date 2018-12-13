@@ -99,6 +99,7 @@ section{
 	height: 100vh;
 	background-color: #636e72;
 	/*border: solid 5px black;*/
+	display: block;
 }
 
 /*HEADER CONTAINER*/
@@ -119,7 +120,7 @@ section{
 	margin: 0;
 	line-height: 100vh;
 	overflow: hidden;
-	background-image: url("../media/chalk.jpg");
+	background-image: url("../../media/chalk.jpg");
 	background-size: cover;
 	background-position: right;
 }
@@ -134,20 +135,6 @@ section{
 	width: 50%;
 	height: 100%;
 	float: left;
-}
-
-/*SCHEDULE BLOCK DEFAULT*/
-.schedule__block{
-	height: 90%;
-	width: 50%;
-	float: left;
-}
-
-.schedule__block p{
-	margin: 5% 10% 5% 10%;
-	color: #dfe6e9;
-	font-family: base-9-sans, sans-serif;
-	font-size: 1.4em;
 }
 
 /*TITLE FOR SCHEDULE SECTION*/
@@ -174,36 +161,25 @@ section{
 					9px 9px #1e272e;
 }
 
-.schedule__chart__wrapper{
-	height: 85%;
-	width: 50%;
-	border: 5px solid #1e272e;
-	margin: auto;
-	margin-top: 7.5%;
-	font-family: base-9-sans, sans-serif;
-	color: #1e272e;
-
-}
-
-.schedule__chart__column{
-	height: 100%;
-	width: 50%;
-	float: left;
-}
-
-.schedule__chart__cell{
-	height: calc(100% / 17);
-	width: 100%;
-	text-align: center;
-	line-height: 175%;
-	background-color: #dfe6e9;
-}
-
 .bottom__border{
 	border-bottom: 5px solid #1e272e;
 }
 
 .right__border{
+	border-right: 5px solid #1e272e;
+}
+
+.top__border{
+	border-top: 5px solid #1e272e;
+}
+
+.left__border{
+	border-left: 5px solid #1e272e;
+}
+
+.fullcell__border{
+	border-top: 5px solid #1e272e;
+	border-bottom: 5px solid #1e272e;
 	border-right: 5px solid #1e272e;
 }
 
@@ -230,6 +206,57 @@ section{
 	background-color: #dfe6e9;
 	transition: all 0.5s ease;
 }
+
+.workout__chart__wrapper{
+	height: 85%;
+	width: 60%;
+	margin: auto;
+	margin-top: 7.5%;
+	font-family: base-9-sans, sans-serif;
+	color: #1e272e;
+}
+
+.workout__chart__row{
+	height: calc(100% / 15);
+	width: 100%;
+}
+
+.workout__chart__fullcell{
+	height: calc(100% / 15);
+	width: 100%;
+	text-align: center;
+	line-height: 250%;
+	background-color: #dfe6e9;
+	float: left;
+}
+
+.workout__chart__cell{
+	height: 100%;
+	width: calc(100% / 3);
+	text-align: center;
+	line-height: 250%;
+	background-color: #dfe6e9;
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .p-pt{
 	background-color: #fab1a0;
